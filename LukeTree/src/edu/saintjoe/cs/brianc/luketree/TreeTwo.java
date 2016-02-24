@@ -1,6 +1,5 @@
 package edu.saintjoe.cs.brianc.luketree;
 
-import edu.saintjoe.cs.brianc.guessgameblc.LukeTree;
 
 public class TreeTwo {
 	

@@ -4,36 +4,40 @@ public class LukeTree {
 	
 	// Here are our data members
 	// Store tree's height measured in feet
-	private int height;
+	public int height;
 	
 	// Store tree's age measured in parsecs
-	public int age;
+	private int age;
 	
 
 	public String species;
 	
 	public static void main(String[] args) {
-		LukeTree treeOne;
+		LukeTree zachBobos;
 		LukeTree treeTwo;
+		LukeTree treeThree;
 		
-		treeOne = new LukeTree();
+		zachBobos = new LukeTree();
+		treeTwo = new LukeTree();
+		treeThree = treeTwo;
 		treeTwo = new LukeTree();
 		
 		// Directly access the data member "height" of object referred to by "treeOne"
-		treeOne.setHeight(14);
+		zachBobos.setHeight(14);
 		
 		// Invoke the method named "setHeight" on the object referred to by "treeTwo"
 		treeTwo.setHeight(80);
 		
 		// Directly access the data member "species" of the objects referred to by "treeOne" and "treeTwo"
 		treeTwo.species = "Elm";
-		treeOne.species = "Oak";
+		zachBobos.species = "Oak";
 		
-		treeOne.setAge(20);
+		zachBobos.setAge(20);
 		treeTwo.setAge(50);
+		treeThree.setAge(25);
 		
-		System.out.println("Tree treeOne height is " + treeOne.getHeight() + " TreeOne age is " + treeOne.age);
-		System.out.println("Tree treeOne name is " + treeOne.species + " Treetwo name is " + treeTwo.species + " tree one age is " + treeOne.age);
+		System.out.println("Tree treeOne height is " + zachBobos.getHeight() + " TreeOne age is " + zachBobos.age);
+		System.out.println("Tree treeOne name is " + zachBobos.species + " Treetwo name is " + treeTwo.species + " tree one age is " + zachBobos.age);
 	}
 	
 	// Here are our methods
@@ -44,7 +48,8 @@ public class LukeTree {
 	public void setHeight(int newHeight) {
 		height = newHeight;
 	}
-	public int getAge () {
+
+	public int getAge() {
 		return age;
 	}
 	
